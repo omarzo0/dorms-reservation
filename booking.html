@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>booking</title>
+   
+    <link rel="stylesheet" type="text/css" href="css/pickmeup.css">
+    <link rel="stylesheet" type="text/css" href="css/handle-counter.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    
+    <link rel="shortcut icon" type="x-icon" href="images/logo.png">
+    
+    <script src="script.js"></script>
+</head>
+    
+<body>
+    <header class="tm-header">
+        <img class="tm-logo" src="images/download.png" alt="Galala University logo">
+        <nav class="tm-nav" >
+       <div>
+            <ul>
+                <li class="tm-list"><a href="homepage.php">Home</a></li>
+                <li class="tm-list"><a href="rooms.html">Rooms</a></li>
+                <li class="tm-list"><a href="booking.html">Booking</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>    
+            </div>
+        </nav>
+    </header>
+    <section class="tm-main">
+        <div class="main-heading">
+            <h2>booking</h2>
+        </div>   
+     </section>
+     <section class="tm-booking">
+        <form method="post" action="login.html" enctype="multipart/form-data">
+            <div class="tm-form">
+                <p>It looks like you are not logged in </p><br>
+                <p>Please login to book a room</p><br>
+                <input type="submit" value="Log in" href="login.html">
+            </div>
+        </form>
+        <form  method="post" action="signup.html" enctype="multipart/form-data">
+            
+        <div class="tm-form">
+            <p>Or if you don't have an account you can sign up here</p><br>
+            <input type="submit" value="Sign up" href="signup.html">
+        </div>
+    </form>
+    </section>
+    <footer class="tm-footer">
+        <div class="tm-us">
+        <p class="bold"></p>
+        <p>All rights reserved &copy; 2023</p>    
+        </div>
+       
+        <div class="tm-address">
+        <p> Galala Plateau , Attaka , Suez<br>
+            hotline:15888 <br>
+            Email:info@gu.edu.eg</p>    
+        </div>
+        <br/>
+    <div class="tm-media">
+        <a href="#"> <img src="images/fb.png"></a>
+        <a href="#"> <img src="images/G.png"> </a>
+        <a href="#"> <img src="images/twittr.png"> </a>
+        <a href="#"> <img src="images/insta.png"> </a>
+        </div>        
+    </footer>
+    <script>
+        function validateForm() {
+            var name = document.getElementById("Name").value;
+            var email = document.getElementById("Email").value;
+            var studentId = document.getElementById("Student_Id").value;
+            var gender = document.getElementById("Gender").value;
+            var roomType = document.getElementById("Room_Type").value;
+            var nationalIdPhoto = document.getElementById("National_Id_Photo").value;
+            var guIdPhoto = document.getElementById("GU_Id_Photo").value;
+
+            if (name === "" || email === "" || studentId === "" || gender === "" || roomType === "" || nationalIdPhoto === "" || guIdPhoto === "") {
+                alert("Please fill out all the fields.");
+                return false;
+            }
+        }
+    </script>
+    <script>
+        function toggleExcuseInput() {
+            var checkbox = document.getElementById("ExcuseCheckbox");
+            var excuseInput = document.getElementById("ExcuseInput");
+    
+            if (checkbox.checked) {
+                excuseInput.style.display = "block";
+                excuseInput.required = true;
+            } else {
+                excuseInput.style.display = "none";
+                excuseInput.required = false;
+            }
+        }
+    </script>
+</body>
+</html>
