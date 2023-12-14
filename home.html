@@ -1,0 +1,38 @@
+
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Contact</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    </head>
+
+    <body>
+        <h1>SIS Project </h1>
+
+        <form action="store_data.php" method="post" enctype="multipart/form-data">
+            <label for="Name" > Name </label> 
+            <input type="text" id = "Name" name = "Name">
+
+            <label for="Email" > Email </label> 
+            <input type="text" id = "Email" name = "Email">
+
+            <label for="Student_Id" > Student_Id </label> 
+            <input type="text" id = "Student_Id" name = "Student_Id">
+
+            <label for="Gender" > Gender </label> 
+            <input type="text" id = "Gender" name = "Gender">
+
+            <label for="Room_Type" > Room_Type </label> 
+            <input type="text" id = "Room_Type" name = "Room_Type">
+
+
+            <input type="file" id="National_Id_Photo" name="National_Id_Photo[]" multiple>
+
+            <input type="file" id="GU_Id_Photo" name="GU_Id_Photo[]" multiple>
+            
+            <br>
+            <button> Sign up </button>
+        </form>
+    </body>
+</html>

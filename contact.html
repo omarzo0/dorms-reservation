@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title> Magestic Hotel</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="dist/pickmeup.min.js"></script>
+    <script type="text/javascript" src="dist/handleCounter.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/pickmeup.css">
+    <link rel="stylesheet" type="text/css" href="css/handle-counter.min.css">
+    <link rel="stylesheet" type="text/css" href="css/contact.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script type="text/javascript" src="dist/jquery.scrollUp.js"></script>
+     <script type="text/javascript" src="dist/demo.js"></script>
+
+     <link rel="shortcut icon" type="x-icon" href="images/logo.png">
+
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3tO4SQlk9ZVpuhRXlmNfYh37e63-Li2k&callback=initMap">
+    </script>
+
+ 
+    
+    </head>
+    
+<body>
+    <header class="tm-header">
+        <img class="tm-logo" src="images/download.png" alt="Galala University logo">
+        <nav class="tm-nav">
+       <div>
+            <ul>
+                <li class="tm-list"><a href="homepage.php">Home</a></li>
+                <li class="tm-list"><a href="rooms.html">Rooms</a></li>
+                <li class="tm-list"><a href="book.html">Booking</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>    
+            </div>
+        </nav>
+    </header>
+    
+    
+    <section class="tm-main">
+        <div class="main-heading">
+            <h2>contact</h2>
+            
+        </div>   
+    </section>
+    
+    
+    
+    <section class="tm-booking">
+    
+        <form action="submit_contact.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <input type="submit" value="Submit">
+        </form>
+        
+        <div class="vertical-line"> </div>
+        
+    <div class="tm-form2">
+   <div class="tm-cl">
+        <p class="here"></p><img id="place" src="">
+
+        <iframe style="-webkit-filter: grayscale(100%); filter: grayscale(100%); " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d222468.1241550336!2d32.167075676815315!3d29.397670912563814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1456ff6336fe6ec7%3A0x2369aaf4863ae962!2sGalala%20Plateau%20Corniche!5e0!3m2!1sen!2seg!4v1658945579482!5m2!1sen!2seg" width="100%" height="300px" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+     
+    </div>
+    </div>
+        
+  </section>
+    
+    
+  <footer class="tm-footer">
+    <div class="tm-us">
+    <p class="bold"></p>
+    <p>All rights reserved &copy; 2023</p>    
+    </div>
+    <div class="tm-address">
+    <p class="bold">Address</p>
+    <p> Galala Plateau , Attaka , Suez<br>
+        hotline:15888 <br>
+        Email:info@gu.edu.eg</p>    
+    </div>
+    <br/>
+<div class="tm-media">
+    <a href="#"> <img src="images/fb.png"></a>
+    <a href="#"> <img src="images/G.png"> </a>
+    <a href="#"> <img src="images/twittr.png"> </a>
+    <a href="#">  <img src="images/insta.png"> </a>
+    </div>        
+ </footer> 
+</body>
+    
+</html>
+    
