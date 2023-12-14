@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title> payment</title>
+     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     <script type="text/javascript" src="dist/slick.js"></script>
+     <script type="text/javascript" src="dist/jquery.scrollUp.js"></script>
+  
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+   
+<!--    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">-->
+
+    <script type="text/javascript" src="dist/demo.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="shortcut icon" type="x-icon" href="images/logo.png">
+</head>
+<body>
+    <header class="tm-header">
+        <img class="tm-logo" src="images/download.png" alt="Galala University logo">
+        <nav class="tm-nav" >
+       <div>
+            <ul>
+                <li class="tm-list"><a href="homepage.php">Home</a></li>
+                <li class="tm-list"><a href="rooms.html">Rooms</a></li>
+                <li class="tm-list"><a href="book.html">Booking</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>    
+            </div>
+        </nav>
+    </header>
+    <div class="main-heading">
+        <h2 style="margin-top: 27px;">payment</h2>
+        <p>
+  
+        </p>
+      </div>
+      <section class="tm-payment">
+        <div class="tm-payment-form">
+            <h2>Payment Details</h2>
+            <br>
+            <form action="contact.php" method="post">
+                <label for="Name" > Name </label> 
+                <input type="text" id = "Name" name = "Name" placeholder="Name">
+
+                <label for="Card_number">Card number</label>
+                <input type="number" name="Card_number" id="Card_number" placeholder="Card Number">
+                <label for="Card_type"> Card type </label>
+                <select name="Card_type" id="Card_type">
+                 <option value="visa" selected>Visa</option>
+                 <option value="mastercard">Mastercard</option>
+                 <option value="amex" >American Express</option>
+                </select>
+                <label for="Expiry_date">Expiry date</label>
+                <br>
+                <input type="date" name="Expiry_date" id="Expiry_date" placeholder="Expiry Date (YYYY-MM-DD)">
+                <br><br>
+
+                <label for="Cvv">Cvv</label>
+                <input type="number" id= "Cvv"name="Cvv" placeholder="CVV">
+
+                <input type="submit" value="Make Payment">
+            </form>
+        </div>
+    </section>
+               
+    <footer class="tm-footer">
+        <div class="tm-us">
+        <p class="bold"></p>
+        <p>All rights reserved &copy; 2023</p>    
+        </div>
+       
+        <div class="tm-address">
+        <p> Galala Plateau , Attaka , Suez<br>
+            hotline:15888 <br>
+            Email:info@gu.edu.eg</p>    
+        </div>
+        <br/>
+    <div class="tm-media">
+        <a href="#"> <img src="images/fb.png"></a>
+        <a href="#"> <img src="images/G.png"> </a>
+        <a href="#"> <img src="images/twittr.png"> </a>
+        <a href="#">  <img src="images/insta.png"> </a>
+        </div>        
+    </footer>
+</body>

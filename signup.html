@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylestudentlogin.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="images/ImageHandler (1).png">
+
+    <title>Sign-up</title>
+
+   </head>
+<body>
+    <section>
+        <nav>
+            <a href:="/"><img src="https://www.gu.edu.eg/wp-content/uploads/2022/06/GU-Logo-Color-Original.png"   alt=""></a>
+        <div class="nav-links" id="navLink">
+            <ul>
+                <li><a href="signup.html">Sign-up</a></li>
+                <li><a href="homepage.php">Login</a></li>
+            </ul>
+        </div>
+       </nav>
+
+    </section>
+    <form method="post" action="signup.php">
+        <div class="container main">
+            <div class="row">
+                <div class="col-md-6 side-image">
+                    <a for="" class="close-btn1 fa fa-close" href="./images/ImageHandler (1).png"></a>
+                </div>
+                <div class="col-md-6 right">
+                    <div class="input-box">
+                        <br>
+                        <header>Student Signup</header>
+                        <div class="input-field">
+                            <input type="text" class="input" id="student_username" name="student_username" autocomplete="off">
+                            <label for="student_username">Username</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="text" class="input" id="gu_id" name="gu_id"  autocomplete="off">
+                            <label for="gu_id">GU ID</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="text" class="input" id="student_email" name="student_email"  autocomplete="off">
+                            <label for="student_email">Email</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="password" class="input" id="student_password" name="student_password" >
+                            <label for="student_password">Password</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="password" class="input" id="confirm_password" name="confirm_password">
+                            <label for="confirm_password">Confirm Password</label>
+                        </div>
+                        
+                        <div class="signup">
+                            <span>Already have an account? <a href="homepage.php">Login</a></span>
+                        </div>
+                        <div class="input-field">
+                            <input type="submit" class="submit" value="Sign Up">
+                            <div class="login-register"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    
+
+    
+
+</body>
+</html>
